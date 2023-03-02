@@ -431,7 +431,7 @@ header nav {
   position: relative;
   z-index: 999;
   min-height: 60px;
-  background: #f3c623; /*changed by daksh doshi */
+  background: #09255a; /*changed by daksh doshi */
   color: #07031a;
 }
 /* header nav:before {
@@ -453,6 +453,7 @@ header nav {
   border-color: transparent;
   text-decoration: none;
   display: inline-block;
+  color: white;
 }
 header nav li a {
   line-height: 20px;
@@ -462,9 +463,9 @@ header nav li a {
   font-size: 16px;
   font-weight: 700;
 }
-header nav li a:hover {
+/* header nav li a:hover {
   color: #212121;
-}
+} */
 header nav li {
 }
 header .navbar-default .navbar-nav > .active > a,
@@ -474,8 +475,8 @@ header .navbar-default .navbar-nav > .active > a,
   color: #222222;
 }
 
-.ownmenu > li:hover > a{
-
+.ownmenu > li:hover{
+  background-color: green;
 }
 
 /* .ownmenu > li:hover > a,
