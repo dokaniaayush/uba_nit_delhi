@@ -256,6 +256,7 @@ section {
 	font-weight:800 ;
 	font-size: 4.5rem;
 	margin-right: 6.8rem;
+  margin-bottom: 2rem;
 }
 .title-hr{
 	display: block;
@@ -444,7 +445,8 @@ header nav {
 } */
 
 .ownmenu {
-  margin-left: 100px; /*added by daksh doshi */
+  display: flex;
+  justify-content: space-around;
 }
 .ownmenu > li > a {
   padding: 20px 7.5px; /*changed by daksh doshi */
@@ -475,6 +477,9 @@ header .navbar-default .navbar-nav > .active > a,
   color: #222222;
 }
 
+.ownmenu > li{
+  transition: background-color 0.3s ease-in
+}
 .ownmenu > li:hover{
   background-color: green;
 }
@@ -654,8 +659,29 @@ header .btn-right .btn:hover i {
   background: #fff;
   background-size: cover;
 }
-#banner img {
-  width: 100%;
+
+#banner-carousel
+{
+  padding: 3rem 15rem;
+}
+.carousel-inner{
+  height: 45rem;
+  width: 60%  !important ;
+  margin: 0 auto;
+}
+
+.carousel-indicators
+{
+  left: 8rem !important;
+  margin-bottom: 0 !important;
+}
+.carousel-control-prev{
+  left: 22rem !important;
+}
+
+.carousel-control-next
+{
+  right: 22rem !important;
 }
 .bnr-txt {
   position: absolute;
@@ -3592,5 +3618,5 @@ p b {
 }
 
 .answ{
-  margin 10px;
+  margin: 10px;
 }
