@@ -477,42 +477,38 @@ header .navbar-default .navbar-nav > .active > a,
   color: #222222;
 }
 
-.ownmenu > li{
-  transition: background-color 0.3s ease-in
+.ownmenu > li.ownmenu-item{
+  transition: background-color 0.2s ease-in
 }
-.ownmenu > li:hover{
+.ownmenu > li.ownmenu-item:hover{
   background-color: green;
 }
 
-/* .ownmenu > li:hover > a,
-.ownmenu > li.active > a {
-  border-top: 2px solid #303030;
-} */
-header .ownmenu ul.dropdown {
-  padding-bottom: 20px;
-  background: #fff;
+.dropdown:hover .dropdown-menu{
+  display: block;
 }
-header .ownmenu ul.dropdown li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  border-bottom: 1px solid #e5e5e5;
-  line-height: 38px;
-  padding: 0px;
-  background: none;
-  color: #000;
-  font-size: 12px;
-  display: inline-block;
-  width: 100%;
+
+.ownmenu > li.ownmenu-item > div.dropdown-menu{
+  margin: -1rem 1rem !important; 
+  width: 20rem;
 }
-header .ownmenu ul.dropdown li a:hover {
-  background: none;
-  color: #ffdd00;
+
+.ownmenu >li> a.dropdown-toggle::after{
+  margin-left: 0.5em !important;
 }
-header .ownmenu ul.dropdown li:nth-last-child(1) a {
+
+.ownmenu > li.dropdown > div.dropdown-menu > a.dropdown-item{
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.1s ease-in;
 }
-.ownmenu > li:hover > a,
-.ownmenu > li.active > a {
+
+.ownmenu > li.dropdown > div.dropdown-menu > a.dropdown-item:hover{
+  color: whitesmoke;
+  background-color: #1f1f6edb;
 }
+
+
 .sub-nav-co {
   float: right;
   position: relative;
@@ -674,6 +670,12 @@ header .btn-right .btn:hover i {
 {
   left: 8rem !important;
   margin-bottom: 0 !important;
+}
+
+.carousel-dark .carousel-control-next-icon, 
+.carousel-dark .carousel-control-prev-icon{
+  width: 5rem;
+  height: 4rem;
 }
 .carousel-control-prev{
   left: 22rem !important;
