@@ -385,8 +385,10 @@ header .logo-mid {
 }
 
 header .logo-left {
-  text-align: left;
-  margin: 10px 0;
+  margin: 1.5rem 20rem;
+  width: 13rem;
+  height: auto;
+  border-radius: 50%;
 }
 
 .heading .logo-mid {
@@ -426,31 +428,42 @@ header .nav-img {
   z-index: -1;
   height: 100%;
 }
+
+.home-wrapper
+{
+  height: 100vh;
+}
 header nav {
   display: inline-block;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   z-index: 999;
-  min-height: 60px;
-  background: #09255a; /*changed by daksh doshi */
-  color: #07031a;
+  /* min-height: 60px; */
+  margin-right: 5rem;
 }
-/* header nav:before {
-  height: 1px;
-  content: "";
-  background: #fff;
-  position: absolute;
-  width: 100%;
-  margin-top: 1px;
-} */
+
+header.transparent 
+{
+  background: transparent;
+  /* background-color: #09255a; */
+  display: flex;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+header.scrolled{
+  background-color: #09255a;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s linear;
+  /* color: #252525; */
+}
 
 .ownmenu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .ownmenu > li > a {
-  padding: 20px 7.5px; /*changed by daksh doshi */
-  margin: 0 20px;
+  margin: 0 1rem;
   border-top: 2px solid;
   border-color: transparent;
   text-decoration: none;
@@ -478,7 +491,8 @@ header .navbar-default .navbar-nav > .active > a,
 }
 
 .ownmenu > li.ownmenu-item{
-  transition: background-color 0.2s ease-in
+  transition: background-color 0.2s ease-in;
+  padding: 1rem;
 }
 .ownmenu > li.ownmenu-item:hover{
   background-color: green;
@@ -658,12 +672,11 @@ header .btn-right .btn:hover i {
 
 #banner-carousel
 {
-  padding: 3rem 15rem;
+  position: absolute;
+  top: 0;
 }
 .carousel-inner{
-  height: 45rem;
-  width: 60%  !important ;
-  margin: 0 auto;
+  height: 100vh;
 }
 
 .carousel-indicators
