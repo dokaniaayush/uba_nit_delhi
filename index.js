@@ -11,7 +11,8 @@ $(document).ready(function(){
         if($(window).scrollTop() >0) {
             $('header').removeClass('transparent');
             $('header').addClass('scrolled');
-       } else {
+       }
+       else {
            $('header').removeClass('scrolled');
            $('header').addClass('transparent');
        }
