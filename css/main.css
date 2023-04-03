@@ -1,7 +1,7 @@
 /* MENU CONFIGURATION
 **********************************************************/
 .sticky{
-	position: sticky;
+	position: fixed;
 	top: 0;
 }
 .ownmenu {
