@@ -30,36 +30,24 @@
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
 
 </head>
 
 <body class="patern">
 
-  <!--======= HEADER START =========-->
-
-  <!--LOGO-->
-  <!-- <div class="container heading" style="margin-bottom: 0px; margin-top: 10px;">
-    <div class="col col-md-2 logo-left"><a href="#">
-        <img class="img-fluid" src="images/logo-left.png "></a>
-    </div>
-    <div class="col col-md-8 logo-mid">
-      <div>
-        <h1 class="title-text">UNNAT BHARAT ABHIYAN</h2>
-          <hr class="title-hr">
-          <h2 class="title-cllg">NIT DELHI</h2>
+  
+  
+  <section id="home-wrapper">
+    
+    <!--======= HEADER START =========-->
+    <header id="header" class="fixed-top transparent">
+      <div class="col col-md-2 logo-left">
+        <a href="#"><img class="img-fluid" src="images/logo-left.png "></a>
       </div>
-    </div>
-    <div class="col col-sm-2 logo-right-coloured"><a href="#.">
-        <img class="img-logo" src="img/NITD_logo.jpg"></a></div>
-  </div> -->
-<section class="home-wrapper">
-
-  <header class="sticky">
-    <!--======= NAVIGATION =========-->
-    <div class="col col-md-2 logo-left">
-      <a href="#"><img class="img-fluid" src="images/logo-left.png "></a>
-    </div>
-    <nav>
+      <!--======= NAVIGATION =========-->
+    <nav id="navBar">
       <div class="container">
         <ul id="ownmenu" class="ownmenu">
           <li class="active ownmenu-item"><a href="Home.html">Home</a> </li>
@@ -99,6 +87,7 @@
         </ul>
       </div>
     </nav>
+    <hr class="header-hr">
   </header>
   
   <!--======= HEADER END =========-->
@@ -106,7 +95,7 @@
 
   <!-- ======== BANNER CARAOUSEL START======= -->
 
-  <div id="banner-carousel" class="carousel carousel-dark " data-bs-ride="carousel">
+  <div id="banner-carousel" class="carousel slide carousel-dark " data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
@@ -124,18 +113,20 @@
         <img src="images/MainSlider/img1.jpeg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#banner-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
   </div>
-
   <!-- ======== BANNER CARAOUSEL END======= -->
 
+  <div class="container title-container">
+    <div class="title-heading-container" data-aos="fade-left" data-aos-anchor="#header" data-aos-anchor-placement="top-top">
+      <h1 class="title-heading">Unnat bharat abhiyan</h1>
+    </div>
+    <div class="logo-cllg" data-aos="fade-left" data-aos-delay="500">
+      <a href="#"> <img class="img-fluid img-logo" src="img/NITD_logo.jpg"alt=""> </a>
+      <div class="title-cllg-container">
+        <h2 class="title-cllg">Nit delhi</h2>
+      </div>
+    </div>
+  </div>
 </section>
   <!--======= CONTENT =========-->
   <!-- <div class="content">  -->
@@ -933,6 +924,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out-cubic'
+    });
+  </script>
 </body>
 
 </html>
